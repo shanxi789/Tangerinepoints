@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_white">
+    <include layout="@layout/title_bar"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/gray"/>
+    <include layout="@layout/activity_transfer_balance_userinfo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_count_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have successfully transferred 200 points to Edwin Hwang"
+            android:lines="2"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:textColor="@color/orange_red"/>
+        <TextView
+            android:id="@+id/tv_BehindCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your current point balance is 10824."/>
+    </LinearLayout>
+</LinearLayout>

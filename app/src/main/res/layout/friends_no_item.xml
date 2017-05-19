@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <com.mzth.tangerinepoints.widget.CircleImageView
+        android:id="@+id/iv_friends_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/head01"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/iv_friends_head"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tv_friends_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evan Schindle"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_friends_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="evan"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+Invite"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/orange_red"/>
+</RelativeLayout>

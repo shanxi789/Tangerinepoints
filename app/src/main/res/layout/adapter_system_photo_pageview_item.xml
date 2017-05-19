@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:background="@color/black">
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/iv_item_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:adjustViewBounds="true"/>
+
+    <ProgressBar
+        android:id="@+id/pb_item_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

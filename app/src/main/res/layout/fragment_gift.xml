@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_nearby"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Nearby"-->
+            <!--android:padding="10dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/view_nearby"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/orange_red"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_hotest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Hotest"-->
+            <!--android:padding="10dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/view_hotest"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/orange_red"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_redeemed"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Redeemed"-->
+                <!--android:padding="10dp" />-->
+            <!--<View-->
+                <!--android:id="@+id/view_redeemed"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/orange_red"/>-->
+        <!--</LinearLayout>-->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_sortng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/list_selector"
+            android:layout_weight="3"
+            android:text="Sortng Options"
+            android:drawableLeft="@mipmap/icon08"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:padding="10dp"
+            android:drawableLeft="@mipmap/icon05"
+            android:gravity="center"
+            android:drawablePadding="5dp"/>
+            <!--<View-->
+                <!--android:id="@+id/view_map"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="@color/orange_red"/>-->
+            </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+        <com.cjj.MaterialRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isLoadMore="true">
+        <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_shopp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <com.mzth.tangerinepoints.widget.MyListView
+                android:id="@+id/lv_shopp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.NestedScrollView>
+        </com.cjj.MaterialRefreshLayout>
+    <LinearLayout
+        android:id="@+id/ll_goole_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/activity_google_map"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <!--左边的侧滑-->
+    <LinearLayout
+        android:id="@+id/linearLayout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <include layout="@layout/fragment_git_drawer_layout"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

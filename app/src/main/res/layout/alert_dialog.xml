@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/shape_white_bg"
+            android:alpha="0.9"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:layout_marginTop="10dp"
+                android:textSize="20.0sp"
+                android:text="提示"
+                android:gravity="center_horizontal"/>
+
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="70dip"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:padding="5dip"
+                android:layout_margin="5dp"
+                android:textSize="16.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#cdcdcd" />
+
+            <LinearLayout
+                android:id="@+id/buttonPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:text="确定"
+                    android:textAllCaps="false"
+                    android:background="@drawable/dialog_white_btn"
+                    android:textColor="#508dfb"
+                    android:textSize="18.0sp" />
+
+                <View
+                    android:id="@+id/view_div"
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="#cdcdcd" />
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/dialog_white_btn"
+                    android:text="取消"
+                    android:textAllCaps="false"
+                    android:textColor="#508dfb"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

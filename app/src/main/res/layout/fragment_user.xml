@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+    <ListView
+        android:id="@+id/lv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/tv_user_coppon_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No coupon is avaiable."
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/ll_coupon_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners_bg"
+            android:text="Get More Coupons by Inviting Your Friends to Join"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For every friend you Invited and signed up,you earn a $1 off coupon. Please check our webslte for more information."
+            android:layout_gravity="center"
+            android:lines="3"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

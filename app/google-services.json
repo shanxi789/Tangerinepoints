@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "571276162230",
+    "firebase_url": "https://tangerinepoints-1491782920732.firebaseio.com",
+    "project_id": "tangerinepoints-1491782920732",
+    "storage_bucket": "tangerinepoints-1491782920732.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571276162230:android:4d3eae4d8e61ab30",
+        "android_client_info": {
+          "package_name": "com.mzth.tangerinepoints"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571276162230-kavg5lt4nj4sfb6n8ed7q7iq1hg47s06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdbmwPy1nRMqplZUnyagZcJRn3jV_uyw8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

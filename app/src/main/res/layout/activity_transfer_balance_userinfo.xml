@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+        <com.mzth.tangerinepoints.widget.CircleImageView
+            android:id="@+id/iv_friend_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/head01"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/tv_friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edwin Hwang"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_friend_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edwin"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</LinearLayout>

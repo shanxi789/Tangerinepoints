@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/title_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View style="@style/view_gray_white_height_10"/>
+    <ImageView
+        android:id="@+id/iv_title_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/pic02"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tv_merchant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuku Tea"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_merchant_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant * 0.3 mi"
+            android:drawableLeft="@mipmap/icon03"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:drawablePadding="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_merchant_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="351 N Cralgs St,Pittsburgh PA15206"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon04"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Business Hours 9AM-6PM"/>
+        <com.mzth.tangerinepoints.widget.MyGridView
+            android:id="@+id/gv_shopp_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="@color/gray"/>
+    <com.mzth.tangerinepoints.widget.MyListView
+        android:id="@+id/lv_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

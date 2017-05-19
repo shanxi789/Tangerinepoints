@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/title_bar"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/tv_help_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    For questions regarding your account or problems you encountered while using the app, please send an email to help@tangerinepoints.com, and we will reply as soon as we can. Thank you."
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+</LinearLayout>
